@@ -2,29 +2,13 @@ package br.com.domain;
 
 import java.time.LocalDate;
 
-public class Mentoria {
-    String title;
-    String description;
+public class Mentoria extends Conteudo {
+
     LocalDate date;
 
     public Mentoria() {
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public LocalDate getDate() {
         return date;
@@ -35,11 +19,16 @@ public class Mentoria {
     }
 
     @Override
+    public double calcXp() {
+        return DEFAULT_XP + 20;
+    }
+    @Override
     public String toString() {
         return "Mentoria{" +
-                "title='" + title + '\'' +
-                ", description='" + description + '\'' +
+                "title='" + getTitle() + '\'' +
+                ", description='" + getDescription() + '\'' +
                 ", date=" + date +
                 '}';
     }
+
 }

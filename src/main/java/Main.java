@@ -1,3 +1,4 @@
+import br.com.domain.Conteudo;
 import br.com.domain.Curso;
 import br.com.domain.Mentoria;
 
@@ -19,6 +20,8 @@ public class Main {
         mentoria1.setTitle("Mentoria Java");
         mentoria1.setDescription("Mentoria de Java para inciantes");
         mentoria1.setDate(LocalDate.now());
+
+        Conteudo conteudo = new Curso();
 
         System.out.println(curso1);
         System.out.println(curso2);

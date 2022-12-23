@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f37b9d0-885f-44ee-bcc5-22ae37d6b0b5" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/Curso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/Mentoria.java" afterDir="false" />
+    <list default="true" id="9f37b9d0-885f-44ee-bcc5-22ae37d6b0b5" name="Changes" comment="Add curso and mentoria class and create objects">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/Conteudo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/domain/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/domain/Mentoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/Mentoria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671808077715</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add curso and mentoria class and create objects">
+      <created>1671809847216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671809847216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Add curso and mentoria class and create objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add curso and mentoria class and create objects" />
   </component>
 </project>
