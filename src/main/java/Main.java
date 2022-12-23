@@ -1,6 +1,4 @@
-import br.com.domain.Conteudo;
-import br.com.domain.Curso;
-import br.com.domain.Mentoria;
+import br.com.domain.*;
 
 import java.time.LocalDate;
 
@@ -23,8 +21,32 @@ public class Main {
 
         Conteudo conteudo = new Curso();
 
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria1);
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setName("Orange Tech");
+        bootcamp.setDescription("Bootcamp Java Developer");
+        bootcamp.getContents().add(curso1);
+        bootcamp.getContents().add(curso2);
+        bootcamp.getContents().add(mentoria1);
+
+        Dev dev1 = new Dev();
+        dev1.setName("Jhon");
+        dev1.subscribeBootcamp(bootcamp);
+        System.out.println(dev1.getName() + " Subscribed Content: " + dev1.getSubscribedContent());
+        dev1.progress();
+        System.out.println(dev1.getName() + " Subscribed Content: " + dev1.getSubscribedContent());
+        System.out.println("Earned XP: " + dev1.calcFullXp());
+        System.out.println(dev1.getName() + " Completed Content: "+ dev1.getCompletedContent() + "\n");
+
+        Dev dev2 = new Dev();
+        dev2.setName("Mary");
+        dev2.subscribeBootcamp(bootcamp);
+        System.out.println(dev2.getName() + " Subscribed Content: " + dev2.getSubscribedContent());
+        dev2.progress();
+        System.out.println(dev2.getName() + " Subscribed Content: " + dev2.getSubscribedContent());
+        System.out.println("Earned XP: " + dev2.calcFullXp());
+        dev2.progress();
+        dev2.progress();
+        System.out.println("Earned XP: " + dev2.calcFullXp());
+        System.out.println(dev2.getName() + " Completed Content: "+ dev2.getCompletedContent()+ "\n");
     }
 }
